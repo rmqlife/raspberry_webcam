@@ -7,6 +7,6 @@ echo $camname
 sudo fswebcam -r 640x480 -p YUYV -S 60  $camname
 
 # send this to remote image
-# scp $camname rmqlife@www.rmqlife.com:~/pics/cam.jpg
-rsync $camname rmqlife@www.rmqlife.com:~/pics/cam.jpg
+scp $camname rmqlife@www.rmqlife.com:~/pics/cam.jpg
+# rsync $camname rmqlife@www.rmqlife.com:~/pics/cam.jpg
 
